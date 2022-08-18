@@ -1,4 +1,3 @@
-
 <div class="courses-panel">
 
     <h3>All Courses</h3>
@@ -7,19 +6,17 @@
 
         <mat-tab label="Beginners">
 
-            <courses-card-list
-                    [courses]="[]">
-
+            <courses-card-list [courses]="beginnerCourses">
+                <!--  -->
             </courses-card-list>
 
         </mat-tab>
 
         <mat-tab label="Advanced">
 
-            <courses-card-list
-                    [courses]="[]"
-
-            ></courses-card-list>
+            <courses-card-list [courses]="AdvancedCourses">
+                <!-- -->
+            </courses-card-list>
 
         </mat-tab>
 
@@ -28,4 +25,3 @@
 
 
 </div>
-
