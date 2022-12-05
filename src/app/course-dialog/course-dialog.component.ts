@@ -80,7 +80,7 @@ export class CourseDialogComponent implements OnInit, AfterViewInit {
           this.close();
           console.log(val.json());
         },
-        error: (err) => console.log(err),
+        error: (err) => console.log("Error Accrued in course Dialog", err),
         complete: () => {
           console.log("completed!");
         },

@@ -5,7 +5,7 @@
     <mat-tab-group>
 
         <mat-tab label="Beginners">
-
+            <h1 *ngIf="loadingCourses">Loading.....</h1>
             <courses-card-list [courses]="beginnerCourses$ | async">
                 <!--  -->
             </courses-card-list>
@@ -14,6 +14,7 @@
 
         <mat-tab label="Advanced">
 
+            <h1 *ngIf="loadingCourses">Loading.....</h1>
             <courses-card-list [courses]="advancedCourses$ | async">
                 <!-- -->
             </courses-card-list>

@@ -35,7 +35,7 @@ export class CourseComponent implements OnInit, AfterViewInit {
   lessons$: Observable<Lesson[]>;
 
   @ViewChild("searchInput", { static: true }) searchInput: ElementRef;
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) { }
   courseId: string;
   ngOnInit() {
     this.courseId = this.route.snapshot.params["id"];
